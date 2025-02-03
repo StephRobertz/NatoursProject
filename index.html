@@ -11,7 +11,11 @@
 
     <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="img/Logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
 
     <title>Stephanie Robertz | Portfolio</title>
   </head>
@@ -28,22 +32,20 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="/index.html" class="navigation__link"
+            <a href="index.html" class="navigation__link"
               ><span>01</span>Home</a
             >
           </li>
           <li class="navigation__item">
-            <a href="/about.html" class="navigation__link"
-              ><span>02</span>About</a
-            >
+            <a href="#popup5" class="navigation__link"><span>02</span>About</a>
           </li>
           <li class="navigation__item">
-            <a href="/work.html" class="navigation__link"
-              ><span>03</span> Work</a
-            >
+            <a href="#popup7" class="navigation__link"><span>03</span> Work</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link"><span>04</span> Contact</a>
+            <a href="#popup6" class="navigation__link"
+              ><span>04</span> Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -51,7 +53,7 @@
 
     <header class="header">
       <div class="header__logo-box">
-        <img src="img/logo-white.png" alt="Logo" class="header__logo" />
+        <img src="img/logo.png" alt="Logo" class="header__logo" />
       </div>
       <div class="header__text-box">
         <h1 class="heading-1">
@@ -59,8 +61,199 @@
           <span class="heading-1--sub">Stephanie Robertz</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Contact me</a>
+        <a
+          href="mailto:stephanie.robertz@gmail.com"
+          class="btn btn--white btn--animated"
+          >Contact me</a
+        >
       </div>
     </header>
+
+    <!-- POPUP ABOUT -->
+    <div class="popup" id="popup5">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__about-container">
+          <div class="about">
+            <h1 class="heading-2--main2">About me</h1>
+
+            <p class="heading-2--sub2">My name is Stephanie Robertz</p>
+
+            <p class="about-text">
+              I'm a Software Developer based in Porvoo, Finland. I have a
+              passion for designing and building websites. I am actively seeking
+              opportunities to contribute my skills and to work with a
+              collaborative team. Whether it's building user interfaces or
+              creating userfriendly websites. I am excited to take on new
+              challenges and grow as a developer.
+            </p>
+          </div>
+          <div class="popup__right">
+            <a href="#mywork" class="popup__close">&times;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP CONTACT -->
+    <div class="popup" id="popup6">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__contact-container">
+          <div class="contact">
+            <h1 class="heading-2--main2">Contact</h1>
+
+            <p class="heading-2--sub2">Please reach out to me via email!</p>
+            <a href="#" class="btn btn--white btn--animated">Send a message</a>
+          </div>
+          <div class="popup__right">
+            <a href="#mywork" class="popup__close">&times;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP WORK -->
+    <div class="popup" id="popup7">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__work-container">
+          <section class="mywork">
+            <div class="container">
+              <div class="item item-1">
+                <p class="vertical-text">work</p>
+              </div>
+              <div class="item item-2">
+                <div class="heading-2--sub2">Work</div>
+                <p class="work-text">
+                  Im a creative Software Developer with a passion for designing
+                  and building websites. I am constantly expanding my skills in
+                  web development, design tools like Figma, and technologies
+                  like React and Python to deliver high-quality, scalable
+                  solutions. Below you can find personal projects created with
+                  Figma. Projects made with other technologies, like React you
+                  can find on my GitHub account.
+                </p>
+              </div>
+              <div class="item item-3"></div>
+            </div>
+
+            <!-- PROJECTS -->
+
+            <div class="jobs-container">
+              <div class="project project-git">
+                <a
+                  href="https://github.com/StephRobertz"
+                  target="_blank"
+                  alt="github"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+
+              <div class="project project-1">
+                <a href="#popup">
+                  <img
+                    src="img/bali2.png"
+                    alt="Project image"
+                    class="project__img"
+                  />
+                </a>
+              </div>
+              <div class="project project-2">
+                <a href="#popup2">
+                  <img
+                    src="img/team2.png"
+                    alt="Project image"
+                    class="project__img"
+                  />
+                </a>
+              </div>
+              <div class="project project-3">
+                <a href="#popup3">
+                  <img
+                    src="img/music2.png"
+                    alt="Project image"
+                    class="project__img"
+                  />
+                </a>
+              </div>
+              <div class="project project-4">
+                <a href="#popup4">
+                  <img
+                    src="img/am.png"
+                    alt="Project image"
+                    class="project__img"
+                  />
+                </a>
+              </div>
+
+              <div class="project project-6">Grid</div>
+              <div class="project project-7">is</div>
+              <div class="project project-8">Great</div>
+            </div>
+          </section>
+          <div class="popup__right">
+            <a href="#mywork" class="popup__close">&times;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 1 -->
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__img-container">
+          <img src="img/bali-min.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#popup7" class="popup__close">&times;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 2 -->
+    <div class="popup" id="popup2">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__img-container">
+          <img
+            src="img/HP Design-min.jpg"
+            alt="Tour photo"
+            class="popup__img"
+          />
+        </div>
+        <div class="popup__right">
+          <a href="#popup7" class="popup__close">&times;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 3 -->
+    <div class="popup" id="popup3">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__img-container">
+          <img src="img/Music-min.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#popup7" class="popup__close">&times;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP 4 -->
+    <div class="popup" id="popup4">
+      <div class="popup__content">
+        <!-- Scrollable image inside the popup -->
+        <div class="popup__img-container">
+          <img src="img/Group 23.jpg" alt="Tour photo" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#popup7" class="popup__close">&times;</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
