@@ -1,10 +1,10 @@
 .mywork {
-  margin: 10rem auto;
+  margin: 7rem auto;
 }
-.container {
+.work-container {
   margin: 30px auto;
   display: grid;
-  grid-template-rows: 40vh min-content 10vw;
+  grid-template-rows: 40vh 1fr auto;
   grid-template-columns: 5rem repeat(2, 1fr) 100px;
   grid-gap: 30px;
 
@@ -18,6 +18,7 @@
     grid-row: 1/4;
     background-color: ($color-primary);
     padding: 10px;
+    padding-bottom: 1rem;
 
     .vertical-text {
       writing-mode: vertical-lr; /* Makes text flow vertically */
@@ -25,6 +26,10 @@
       font-size: 20px;
       white-space: nowrap;
       transform: translateY(30rem);
+
+      @include respond("tab-land") {
+        transform: translateY(50rem);
+      }
     }
   }
   .item-2 {
@@ -34,6 +39,7 @@
       $color-primary-dark,
       $color-primary-light
     );
+    padding-bottom: 3rem;
   }
   .item-3 {
     grid-column: 2/5;
@@ -44,6 +50,7 @@
     border-top: 2px solid rgb(228, 221, 221);
     align-self: center;
     justify-self: center;
+    margin-top: 10rem;
     width: 90%;
   }
 }
@@ -132,8 +139,8 @@
   background-color: rgb(72, 78, 111);
 }
 .project-7 {
-  background-color: rgb(160, 46, 134);
+  background-color: rgb(144, 86, 131);
 }
 .project-8 {
-  background-color: rgb(74, 44, 134);
+  background-color: rgb(132, 154, 71);
 }

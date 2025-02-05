@@ -19,15 +19,15 @@ html {
   // } we dont need this one
 
   //order of landscape/portrait always in this order, for example 700px will apply to both of them and then it will use the last one in order (in this case 900, wich is what we want).
-  @include respond(tab-land) {
-    //width < 1200?
+  @include respond("tab-land") {
+    // width < 1200?
     font-size: 56.25%; //1rem = 9px; 9px/16px = 56.25%
   }
-  @include respond(tab-port) {
+  @include respond("tab-port") {
     //width < 900?
     font-size: 50%; //1rem = 8px; 8px/16px = 50%
   }
-  @include respond(big-desktop) {
+  @include respond("big-desktop") {
     font-size: 75%; //1rem = 12px; 12px/16px = 75%
   }
 }
